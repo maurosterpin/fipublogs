@@ -55,6 +55,7 @@ export default {
   }
 
   .icons {
+    color: #1a73e8;
     display: flex;
     position: absolute;
     top: 10px;
@@ -63,16 +64,18 @@ export default {
 
     .icon {
       display: flex;
-      justify-content: content;
+      justify-content: center;
       align-items: center;
       width: 35px;
       height: 35px;
       border-radius: 50%;
       background-color: #fff;
       transition: 0.5s ease all;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
       &:hover {
-        background-color: black;
+        background-color: #1a73e8;
 
         .edit,
         .delete {
@@ -108,7 +111,7 @@ export default {
     height: 100%;
     z-index: 3;
     padding: 32px 16px;
-    color: #000;
+    color: #1a73e8;
 
     h4 {
       padding-bottom: 8px;
@@ -131,9 +134,11 @@ export default {
       font-size: 12px;
       padding-bottom: 4px;
       transition: 0.5s ease-in all;
+      border-bottom: 0.5px solid #fff;
+      width: 108px;
 
       &:hover {
-        color: rgba(48, 48, 48, 0.8);
+        border-bottom: 1px solid #1a73e8;
       }
 
       .arrow {

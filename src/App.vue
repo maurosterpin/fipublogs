@@ -157,6 +157,12 @@ button,
     padding: 100px 16px;
   }
 
+  .error {
+    text-align: center;
+    font-size: 12px;
+    color: red;
+  }
+
   .blog-cards {
     display: grid;
     gap: 32px;

@@ -56,6 +56,11 @@ export default {
     instagram,
     linkedin,
   },
+  computed: {
+    user() {
+      return this.$store.state.user;
+    },
+  },
 };
 </script>
 
@@ -64,6 +69,7 @@ footer {
   margin-top: auto;
   padding: 100px 25px;
   background-color: #1a73e8;
+
   .container {
     display: flex;
     flex-direction: column;

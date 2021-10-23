@@ -22,7 +22,7 @@
       <router-link class="forgot-password" :to="{ name: 'ForgotPassword' }"
         >Forgot your password?</router-link
       >
-      <button>Sign In</button>
+      <button @click.prevent="signIn">Sign In</button>
       <div class="angle"></div>
     </form>
     <div class="background"></div>
@@ -57,6 +57,10 @@ export default {
           this.$router.push({ name: "Home" });
           this.error = false;
           this.errorMsh = "";
+        })
+        .catch((err) => {
+          this.error = true;
+          this.errorMsg = err.message;
         });
     },
   },
